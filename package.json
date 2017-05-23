@@ -1,6 +1,6 @@
 {
   "name": "react-image-progressive",
-  "version": "0.0.2",
+  "version": "0.0.2-0",
   "description": "React Image progressive loading effect",
   "main": "dist/bundle.js",
   "scripts": {
