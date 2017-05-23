@@ -1,0 +1,42 @@
+{
+  "name": "react-image-progressive",
+  "version": "0.0.1-0",
+  "description": "React Image progressive loading effect",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "babel index.js -o dist/bundle.js"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "component",
+    "image",
+    "loader",
+    "medium"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emersonlaurentino/react-image-progressive.git"
+  },
+  "author": "Emerson Laurentino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emersonlaurentino/react-image-progressive/issues"
+  },
+  "homepage": "https://github.com/emersonlaurentino/react-image-progressive#readme",
+  "peerDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4"
+  }
+}
