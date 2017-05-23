@@ -127,7 +127,8 @@ var ImageProgressive = function (_PureComponent) {
       var _props = this.props,
           alt = _props.alt,
           src = _props.src,
-          placeholder = _props.placeholder;
+          placeholder = _props.placeholder,
+          className = _props.className;
       var isLoaded = this.state.isLoaded;
 
       var stylePlaceholder = _extends({}, style.img, style.imgSmall, style.loaded);
@@ -135,7 +136,7 @@ var ImageProgressive = function (_PureComponent) {
 
       return _react2.default.createElement(
         'div',
-        { style: style.placeholder },
+        { style: style.placeholder, className: className },
         _react2.default.createElement('img', { src: placeholder, alt: alt, style: stylePlaceholder }),
         _react2.default.createElement('div', { style: style.container }),
         _react2.default.createElement('img', { src: src, alt: alt, style: styleImage })
@@ -147,11 +148,13 @@ var ImageProgressive = function (_PureComponent) {
 }(_react.PureComponent);
 
 ImageProgressive.propTypes = {
-  src: _propTypes2.default.string.isRequired,
+  alt: _propTypes2.default.string,
+  className: _propTypes2.default.string,
   placeholder: _propTypes2.default.string.isRequired,
-  alt: _propTypes2.default.string
+  src: _propTypes2.default.string.isRequired
 };
 ImageProgressive.defaultProps = {
-  alt: ''
+  alt: '',
+  className: ''
 };
 exports.default = ImageProgressive;
