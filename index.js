@@ -33,13 +33,15 @@ const style = {
 
 class ImageProgressive extends PureComponent {
   static propTypes = {
-    src: PropTypes.string.isRequired,
-    placeholder: PropTypes.string.isRequired,
     alt: PropTypes.string,
+    className: PropTypes.string,
+    placeholder: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
     alt: '',
+    className: '',
   };
 
   state = {
@@ -87,7 +89,7 @@ class ImageProgressive extends PureComponent {
   };
 
   render() {
-    const { alt, src, placeholder } = this.props;
+    const { alt, src, placeholder, className } = this.props;
     const { isLoaded } = this.state;
     const stylePlaceholder = {
       ...style.img,
@@ -100,7 +102,7 @@ class ImageProgressive extends PureComponent {
     }) : style.img;
 
     return (
-      <div style={style.placeholder}>
+      <div style={style.placeholder} className={className}>
         <img src={placeholder} alt={alt} style={stylePlaceholder} />
         <div style={style.container} />
         <img src={src} alt={alt} style={styleImage} />
